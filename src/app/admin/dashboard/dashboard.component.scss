@@ -1,0 +1,74 @@
+
+.dashboard {
+
+    position: relative;
+    margin-left: 27%;
+    background-color: #ffffff64;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 2%;
+    vertical-align: middle;
+    width: 100%;
+    z-index: 2000;
+    
+    }
+
+    element.style {
+        display: block;
+        width: 100% !important;
+        height: 100% !important;
+    }
+    
+    .lastdashboard {
+    
+        position: relative;
+        width: 110%;
+        height: 375px;
+        margin-left: 65%;
+        background-color: #ffffff64;
+        margin-top: 30px;
+        border-radius: 10px;
+        vertical-align: middle;
+        overflow: auto;
+
+        
+        }
+    
+    .btn-primary {
+        color: #fff;
+        background-color: #494949;
+        border-color: #000000;
+    }
+    
+    .btn-add {
+        color: #fff;
+        background-color: #494949;
+        border-color: #000000;
+        width: 100%;
+    }
+    
+    .image{
+    
+        width: 100%;
+        border-radius: 50%;
+        align-items: center;
+        align-content: center;
+        }
+
+        .nextappointment{
+
+            position: relative;
+            margin-left: 27%;
+            height: 375px;
+            background-color: #ffffff64;
+            border-radius: 10px;
+            margin-top: 30px;
+            margin-bottom: 2%;
+            vertical-align: middle;
+            width: 100%;
+            z-index: 2000;
+            overflow: auto;
+            
+            }
+    
+        

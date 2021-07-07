@@ -1,0 +1,260 @@
+<div class="main">
+
+
+    <img class="image" src={{customer.image}}>
+   <h1>{{customer.firstName}} {{customer.lastName}}</h1>
+
+   <h2>{{customer.customername}}</h2>
+   
+   <h2>{{customer.email}}</h2>
+
+   <h2>{{customer.telephon}}</h2>
+
+   <h3>{{customer.address}}</h3>
+
+   <h3>{{customer.postal}}</h3>
+
+   <h3>{{customer.city}}</h3>
+
+   <h3>{{customer.country}}</h3>
+
+   </div>
+   
+
+   <div class="row">
+
+    <div class="col-6">
+
+
+        <div class="calendar">
+            <mwl-demo-utils-calendar-header
+            [(view)]="view"
+            [(viewDate)]="viewDate"
+            (viewDateChange)="fetchEvents()"
+            (viewChange)="fetchEvents()"
+          >
+          </mwl-demo-utils-calendar-header>
+          
+          <ng-template #loading>
+            <div class="text-center">
+              <i class="fas fa-spin fa-spinner fa-5x"></i> <br />
+              Loading events...
+            </div>
+          </ng-template>
+          
+          <div *ngIf="events$ | async; else loading; let events">
+            <div [ngSwitch]="view">
+              <mwl-calendar-month-view
+                *ngSwitchCase="'month'"
+                [viewDate]="viewDate"
+                [events]="events"
+                [activeDayIsOpen]="activeDayIsOpen"
+                (dayClicked)="dayClicked($event.day)"
+                (eventClicked)="eventClicked($event.event)"
+              >
+              </mwl-calendar-month-view>
+              <mwl-calendar-week-view
+                *ngSwitchCase="'week'"
+                [viewDate]="viewDate"
+                [events]="events"
+                (eventClicked)="eventClicked($event.event)"
+              >
+              </mwl-calendar-week-view>
+              <mwl-calendar-day-view
+                *ngSwitchCase="'day'"
+                [viewDate]="viewDate"
+                [events]="events"
+                (eventClicked)="eventClicked($event.event)"
+              >
+              </mwl-calendar-day-view>
+            </div>
+          </div>
+
+
+        </div>
+
+
+<div class="nextappointment">
+    <h2>Last Orders</h2>
+    <table class="table table-striped">
+    
+        <thead>
+            <tr>
+                <th style="width: 10%;">Pic</th>
+                <th style="width: 10%;">Id</th>
+                <th style="width: 60%;">Description</th>
+                <th style="width: 10%;">Price</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr *ngFor="let order of orders">
+                <td><img class="image" src={{order.image}}></td>
+                <td>{{order.id}}</td>
+                <td>{{order.description}}</td>
+                <td>{{order.price}}</td>
+    
+            </tr>
+            <tr *ngIf="!orders">
+                <td colspan="4" class="text-center">
+                    <span class="spinner-border spinner-border-lg align-center"></span>
+                </td>
+            </tr>
+        </tbody>
+      </table>
+
+</div>
+
+</div>
+
+<div class="col-3">
+
+    <div class="newappointment">
+        <h2>Add Appointment</h2>
+
+        <form [formGroup]="appointmentForm" (ngSubmit)="onSubmit()">
+
+         <div style="margin: 0.5%; margin-top: 5%;" class="row">
+
+            <div class="col-9 ">
+                <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" formControlName="date" class="form-control"
+                    [ngClass]="{ 'is-invalid': submitted && f.date.errors }" />
+                <div *ngIf="submitted && f.date.errors" class="invalid-feedback">
+                    <div *ngIf="f.date.errors.required">Date is required</div>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-3 ">
+                <div class="form-group">
+                <label for="hour">Hour</label>
+                <div class="form-group">
+                    <select class="form-control" id="hour">
+                      <option>9:00</option>
+                      <option>9:30</option>
+                      <option>10:00</option>
+                      <option>10:30</option>
+                      <option>11:00</option>
+                      <option>11:30</option>
+                      <option>12:00</option>
+                      <option>12:30</option>
+                      <option>13:00</option>
+                      <option>13:30</option>
+                      <option>16:00</option>
+                      <option>16:30</option>
+                      <option>17:00</option>
+                      <option>17:30</option>
+                      <option>18:00</option>
+                      <option>18:30</option>
+                      <option>19:00</option>
+                      <option>19:30</option>
+                    </select>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 ">
+        <div class="form-group">
+            <label for="service">Service</label>
+            <select class="form-control"  id="services"
+                    required
+                    [(ngModel)]="services.price" name="price">
+              <option *ngFor="let service of services" [value]="service.id">{{service.description}} ${{service.price}}</option>
+            </select>
+          </div>
+    </div>
+
+            <div class="col-12 ">
+                <div class="form-group">
+                    <label for="worker">Worker</label>
+                    <select class="form-control"  id="workers"
+                            required
+                            [(ngModel)]="workers.name" name="name">
+                      <option *ngFor="let worker of workers" [value]="worker.id">{{worker.name}}</option>
+                    </select>
+                  </div>
+            </div>
+        </form>
+
+            <div class="form-group">
+                <div class="checkout">
+                <button [disabled]="loading" class="btn btn-primary">
+                    <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                    Checkout
+                </button>
+            </div>
+        </div>
+  
+        <div class="captcha">
+            <re-captcha
+            (resolved)="resolved($event)"
+            siteKey="6Ld58-MZAAAAAHEkdz907niJX7r6o5VcdMut-DMQ"
+          ></re-captcha>
+          </div>
+        </div>
+
+
+    <div class="lastdashboard">
+        <h2>Last Offers</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th style="width: 10%;">Pic</th>
+                    <th style="width: 10%;">Id</th>
+                    <th style="width: 20%;">Description</th>
+                    <th style="width: 20%;">Total Price</th>
+                </tr>
+                
+            </thead>
+            <tbody>
+                <tr *ngFor="let order of orders.slice().reverse() ">
+                    <td><img class="image" src={{order.image}}></td>
+                    <td>{{order.id}}</td>
+                    <td>{{order.description}}</td>
+                    <td>{{order.price}}$</td>
+    
+                </tr>
+                <tr *ngIf="!orders">
+                    <td colspan="4" class="text-center">
+                        <span class="spinner-border spinner-border-lg align-center"></span>
+                    </td>
+                </tr>
+            </tbody>
+          </table>
+    </div>
+
+    <div style="margin-bottom: 5% ;" class="lastdashboard">
+        <h2>Last Added Products</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th style="width: 10%;">Pic</th>
+                    <th style="width: 10%;">Id</th>
+                    <th style="width: 60%;">Name</th>
+                    <th style="width: 10%;">Price</th>
+                </tr>
+                
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products.slice().reverse() ">
+                    <td><img class="image" src={{product.image}}></td>
+                    <td>{{product.id}}</td>
+                    <td>{{product.name}}</td>
+                    <td>{{product.price}}$</td>
+    
+                </tr>
+                <tr *ngIf="!products">
+                    <td colspan="4" class="text-center">
+                        <span class="spinner-border spinner-border-lg align-center"></span>
+                    </td>
+                </tr>
+            </tbody>
+          </table>
+    </div>
+
+
+</div>
+</div>

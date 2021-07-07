@@ -1,0 +1,25 @@
+{
+  "admins": [
+    {
+      "id": 1,
+      "name": "Guillermo Galindo",
+      "username": "ggalindo",
+      "password": "123456",
+      "image": "/assets/admin/guille.svg"
+    },
+    {
+      "id": 2,
+      "name": "Laura Sahugun",
+      "username": "lsahugun",
+      "password": "hdoeldjleldme30283",
+      "image": "/assets/admin/Laura Sahugun.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Edgar Cogua",
+      "username": "lcogua",
+      "password": "lsokendjei330329",
+      "image": "/assets/admin/donedgar.jpg"
+    }
+  ]
+}

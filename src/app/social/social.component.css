@@ -1,0 +1,89 @@
+.footericons {
+
+    width:15%;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    padding: 0%;
+    margin-left: 84%;
+
+    }
+
+    @keyframes footericons {
+        0%   {right:-400px;}
+        100% {right: 0px;}
+      }
+
+
+    .iconbar {
+        align-content: center;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: -40%;
+        position: absolute;
+        animation-name: footericons ;
+        animation-duration: 6s;
+
+    }
+
+    @media screen and (min-width: 690px) and (max-width: 1500px) {
+
+      .footericons {
+
+        width:20%;
+        justify-content: center;
+        align-items: center;
+        margin: 1%;
+        padding: 0%;
+        margin-left: 75%;
+    
+        }
+
+        .iconbar {
+          align-content: center;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          margin-top: -45%;
+          position: absolute;
+          animation-name: footericons ;
+          animation-duration: 6s;
+  
+      }
+
+      
+
+       }
+
+
+    @media screen and (max-width: 690px) {
+
+      .footericons {
+
+        width:25%;
+        justify-content: center;
+        align-items: center;
+        margin: 1%;
+        padding: 0%;
+        margin-left: 75%;
+        
+        
+    
+        }
+
+        .iconbar {
+          align-content: center;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          animation-name: footericons ;
+          animation-duration: 6s;
+          margin-top: -45%;
+  
+      }
+
+
+  
+    }

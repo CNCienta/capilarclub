@@ -1,0 +1,22 @@
+{
+  "workers": [
+    {
+      "id": 1,
+      "name": "Guillermo Galindo",
+      "username": "ggalindo",
+      "image": "/assets/admin/guille.svg"
+    },
+    {
+      "id": 2,
+      "name": "Laura Sahugun",
+      "username": "lsahugun",
+      "image": "/assets/admin/Laura Sahugun.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Edgar Cogua",
+      "username": "lcogua",
+      "image": "/assets/admin/donedgar.jpg"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+
+<!doctype html>
+<html lang="en">
+  
+  <meta name="Header" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Author: Guillermo Galindo,
+      Illustrator: Guillermo Galindo">
+
+<body>
+
+    <div class="row">
+
+    <div class="col-8">
+
+    <div class="customers">
+
+<table class="table table-striped">
+    
+    <thead>
+        <tr>
+            <th style="width: 4%;">Pic</th>
+            <th style="width: 3%;">Id</th>
+            <th style="width: 6%;">1ºName</th>
+            <th style="width: 6%;">2ºName</th>
+            <th style="width: 8%;">Telephon</th>
+            <th style="width: 10%;">E-mail</th>
+            <th style="width: 20%;">Address</th>
+            <th style="width: 5%;">P.code</th>
+            <th style="width: 5%;">City</th>
+            <th style="width: 5%;">Country</th>
+            <th style="width: 10%;"><a href="/add-customer" class="btn btn-sm btn-add mr-1">Add</a></th>
+        </tr>
+        
+    </thead>
+    <tbody>
+        <tr *ngFor="let customer of customers">
+            <td><img class="image" src={{customer.image}}></td>
+            <td>{{customer.id}}</td>
+            <td>{{customer.firstName}}</td>
+            <td>{{customer.lastName}}</td>
+            <td>{{customer.telephon}}</td>
+            <td>{{customer.email}}</td>
+            <td>{{customer.address}}</td>
+            <td>{{customer.postal}}</td>
+            <td>{{customer.city}}</td>
+            <td>{{customer.country}}</td>
+
+            <td style="white-space: nowrap">
+                <a routerLink="updateCustomer/{{customer.name}}" class="btn btn-sm btn-primary mr-1">Edit</a>
+                <button (click)="deleteCustomer(customer.name)" class="btn btn-sm btn-danger btn-delete-user" [disabled]="customer.isDeleting">
+                    <span *ngIf="customer.isDeleting" class="spinner-border spinner-border-sm"></span>
+                    <span *ngIf="!customer.isDeleting">Delete</span>
+                </button>
+            </td>
+        </tr>
+        <tr *ngIf="!customers">
+            <td colspan="4" class="text-center">
+                <span class="spinner-border spinner-border-lg align-center"></span>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+<div class="col-2">
+<div class="lastcustomers">
+    <h1>Last Added Customers</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th style="width: 4%;">Pic</th>
+                <th style="width: 6%;">1ºName</th>
+                <th style="width: 5%;">Country</th>
+                <th style="width: 5%;">ID</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr *ngFor="let customer of customers.slice().reverse() ">
+                <td><img class="image" src={{customer.image}}></td>
+                <td>{{customer.firstName}}</td>
+                <td>{{customer.country}}</td>
+                <td>{{customer.id}}</td>
+
+            </tr>
+            <tr *ngIf="!customers">
+                <td colspan="4" class="text-center">
+                    <span class="spinner-border spinner-border-lg align-center"></span>
+                </td>
+            </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class="lastcustomers">
+    <h1>Last Actions</h1>
+    <table class="table table-striped">
+
+        <tbody>
+            <tr *ngFor="let action of actions.slice().reverse() ">
+                <td>{{action.username}}</td>
+                <td>{{action.action}}</td>
+
+            </tr>
+            <tr *ngIf="!actions">
+                <td colspan="4" class="text-center">
+                    <span class="spinner-border spinner-border-lg align-center"></span>
+                </td>
+            </tr>
+        </tbody>
+      </table>
+</div>
+
+</div>
+
+</div>
+</body>
+</html>

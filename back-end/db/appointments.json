@@ -1,0 +1,64 @@
+{
+  "appointments": [
+    {
+      "id": 1,
+      "date": "2020-11-17",
+      "hour": "10:00",
+      "name": "Appointment",
+      "customer": "Edgar Cogua",
+      "payed": "yes",
+      "service": "Steam pod",
+      "worker": "Laura Sahugun"
+    },
+    {
+      "id": 2,
+      "date": "2020-11-17",
+      "hour": "15:00",
+      "name": "Appointment",
+      "customer": "Laura Sahugun",
+      "payed": "yes",
+      "service": "Steam pod",
+      "worker": "Edgar Cogua"
+    },
+    {
+      "id": 3,
+      "date": "2020-11-17",
+      "hour": "17:00",
+      "name": "Appointment",
+      "customer": "Edgar Cogua",
+      "payed": "yes",
+      "service": "Steam pod",
+      "worker": "Laura Sahugun"
+    },
+    {
+      "id": 4,
+      "date": "2020-11-17",
+      "hour": "09:00",
+      "name": "Appointment",
+      "customer": "Laura Sahugun",
+      "payed": "yes",
+      "service": "Steam pod",
+      "worker": "Edgar Cogua"
+    },
+    {
+      "id": 5,
+      "date": "2020-11-17",
+      "hour": "10:00",
+      "name": "Appointment",
+      "customer": "Edgar Cogua",
+      "payed": "yes",
+      "service": "Steam pod",
+      "worker": "Laura Sahugun"
+    },
+    {
+      "id": 6,
+      "date": "2020-11-17",
+      "hour": "10:00",
+      "name": "Appointment",
+      "customer": "Laura Sahugun",
+      "payed": "yes",
+      "service": "Steam pod",
+      "worker": "Edgar Cogua"
+    }
+  ]
+}

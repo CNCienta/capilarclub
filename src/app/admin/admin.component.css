@@ -1,0 +1,17 @@
+
+html{
+
+    
+    z-index: -1000;
+    background-size: cover;
+    width: 100%;
+    background-repeat: repeat;
+}
+
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #494949;
+    border-color: #000000;
+}

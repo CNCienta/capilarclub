@@ -1,0 +1,29 @@
+{
+  "institutes": [
+    {
+      "id": 1,
+      "name": "Coiffeur Edgar Cogua",
+      "email": "coiffeuredgarcogua@gmail.com",
+      "web": "http://www.coiffeuredgarcogua.com/",
+      "description": "El maravilloso salón de EDGAR COGUA es de los mejores salones de belleza de la ciudad más de una persona nos recomienda siempre que va, debido al excelente trato que recibe y al extraordinario servicio que le ofrecen. Edgar Cogua, un veterano del mundo de la belleza, cuenta con los mejores profesionales y productos del mercado. No tengas miedo a innovar con el peinado de tu boda,o cualquier evento que tengas y déjate asesorar por los que más saben.",
+      "image": "/assets/logosup.png"
+    },
+    {
+      "id": 2,
+      "name": "Coiffeur Edgar Cogua",
+      "email": "coiffeuredgarcogua@gmail.com",
+      "web": "http://www.coiffeuredgarcogua.com/",
+      "description": "El maravilloso salón de EDGAR COGUA es de los mejores salones de belleza de la ciudad más de una persona nos recomienda siempre que va, debido al excelente trato que recibe y al extraordinario servicio que le ofrecen. Edgar Cogua, un veterano del mundo de la belleza, cuenta con los mejores profesionales y productos del mercado. No tengas miedo a innovar con el peinado de tu boda,o cualquier evento que tengas y déjate asesorar por los que más saben.",
+      "image": "/assets/logosup.png"
+    },
+    {
+      "id": 3,
+      "name": "Coiffeur Edgar Cogua",
+      "email": "coiffeuredgarcogua@gmail.com",
+      "web": "http://www.coiffeuredgarcogua.com/",
+      "description": "El maravilloso salón de EDGAR COGUA es de los mejores salones de belleza de la ciudad más de una persona nos recomienda siempre que va, debido al excelente trato que recibe y al extraordinario servicio que le ofrecen. Edgar Cogua, un veterano del mundo de la belleza, cuenta con los mejores profesionales y productos del mercado. No tengas miedo a innovar con el peinado de tu boda,o cualquier evento que tengas y déjate asesorar por los que más saben.",
+      "image": "/assets/logosup.png"
+    }
+
+  ]
+}

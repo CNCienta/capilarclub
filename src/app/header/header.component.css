@@ -1,0 +1,129 @@
+
+
+
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+    margin-left: 5%;
+
+}
+
+
+
+.bg-light {
+    background-color: #b1b0b0!important;
+    font-weight: bold;
+    font-family: 'Michroma', sans-serif;
+    z-index: 10;
+
+    
+    
+}
+
+
+.logo{
+
+    width: 20%;
+    vertical-align: middle;
+    align-items: center;
+    align-content: center;
+
+}
+
+.logousers {
+
+    width: 5%;
+    vertical-align: middle;
+    align-items: center;
+    align-content: center;
+    z-index: 1;
+    
+}
+
+@media screen and (min-width: 690px) and (max-width: 1500px) {
+
+    .logo{
+
+        width: 50%;
+        vertical-align: middle;
+        align-items: center;
+        align-content: center;
+        margin-left: 50%;
+        
+    
+    }
+
+    .navbar-toggler {
+        padding: .25rem .75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+        margin-top: -10%;
+    }
+
+
+
+    .navbar-collapse {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -ms-flex-align: left;
+        align-items: left;
+        background-color: #b1b0b0e5!important;
+        margin-top: -7%;
+        margin-right: 70%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        
+    }
+
+    
+     }
+
+
+@media screen and (max-width: 690px) {
+
+    .logo{
+
+        width: 50%;
+        vertical-align: middle;
+        align-items: center;
+        align-content: center;
+        margin-left: 50%;
+        
+    
+    }
+
+    .navbar-toggler {
+        padding: .25rem .75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+        margin-top: -10%;
+    }
+
+    .navbar-collapse {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -ms-flex-align: left;
+        align-items: left;
+        background-color: #b1b0b0e5!important;
+        margin-top: -7%;
+        margin-left: -3%;
+        margin-right: 70%;
+        margin-top: 2%;
+        
+    }
+    
+
+  }
+
+  

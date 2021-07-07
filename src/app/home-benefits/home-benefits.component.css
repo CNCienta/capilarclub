@@ -1,0 +1,113 @@
+.login-card {
+
+    word-wrap: break-word;
+    background-color: rgba(170, 170, 170, 0.734);
+    background-clip: border-box;
+    border: 0.05px solid rgb(0, 0, 0);
+    width: 100%;
+    height: 30%;
+    margin-bottom: 10%;
+    margin-left: 1%;
+    align-content: center;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px ;
+    font-family: 'Michroma', sans-serif;
+    font-weight: bold;
+    animation-name: login-page ;
+    animation-duration: 4s;
+
+   }
+
+   .login-page {
+
+    width: 35%;
+    background-size: 100%;
+    background-color: transparent;
+    position: absolute;
+    animation-name: login-page ;
+    animation-duration: 9s;
+    font-family: 'Michroma', sans-serif;
+    font-weight: bold;
+   }
+
+   @keyframes login-page {
+    0%   {left:-1000px;}
+    100% {left: 0px;}
+  }
+
+  @media screen and (min-width: 690px) and (max-width: 1500px) {
+
+
+    .login-card {
+
+        word-wrap: break-word;
+        background-color: rgba(170, 170, 170, 0.837);
+        background-clip: border-box;
+        border: 0.05px solid rgb(0, 0, 0);
+        align-content: center;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px ;
+        font-family: 'Michroma', sans-serif;
+        font-weight: bold;
+        
+       }
+    
+       .login-page {
+        background-size: 100%;
+        background-color: transparent;
+        position: absolute;
+        width: 70%;
+        margin-left: 2%;
+        margin-top: 55%;
+       }
+
+       .card-header {
+        padding: 1% 1%;
+        margin-bottom: 0;
+        background-color: rgba(0,0,0,.03);
+        border-bottom: 1px solid rgba(0,0,0,.125);
+    }
+
+    .card-body {
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      min-height: 1px;
+      padding: 1%;
+  }
+    
+
+  }
+
+
+   @media screen and (max-width: 690px) {
+
+    
+       .login-page {
+        background-size: 100%;
+        background-color: transparent;
+        position: absolute;
+        width: 70%;
+        margin-left: 2%;
+        margin-top: 55%;
+       }
+
+       .card-header {
+        padding: 1% 1%;
+        margin-bottom: 0;
+        background-color: rgba(0,0,0,.03);
+        border-bottom: 1px solid rgba(0,0,0,.125);
+    }
+
+    .card-body {
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      min-height: 1px;
+      padding: 1%;
+  }
+    
+
+  }

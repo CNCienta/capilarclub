@@ -1,0 +1,48 @@
+{
+    "name": "Club Capilar",
+    "short_name": "Club Capilar",
+    "description": "Beauty Centers Enviroment",
+    "theme_color": "#000000",
+    "background_color": "#bbb",
+    "scope": "/",
+    "orientation": "any",
+    "icons": [
+    {
+      "src": "/assets/logo128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }, 
+    {
+      "src": "/assets/logo512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },    {
+      "src": "/assets/logo144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/logo152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/logo180x180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/logo192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/logo256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+],
+    "start_url": "/index.html",
+    "display": "standalone"
+}
+
