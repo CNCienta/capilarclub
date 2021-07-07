@@ -1,0 +1,60 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Pilexil Champú Anticaída 900ml",
+      "description": "Champú anticaída especialmente indicado para personas que desean frenar la pérdida de cabello al mismo tiempo que lo reparan, nutren y fortalecen. ",
+      "price": "20",
+      "image": "/assets/products/champu.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Pilexil Champú Anticaída 900ml",
+      "description": "Champú anticaída especialmente indicado para personas que desean frenar la pérdida de cabello al mismo tiempo que lo reparan, nutren y fortalecen. ",
+      "price": "20",
+      "image": "/assets/products/champu.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Pilexil Champú Anticaída 900ml",
+      "description": "Champú anticaída especialmente indicado para personas que desean frenar la pérdida de cabello al mismo tiempo que lo reparan, nutren y fortalecen. ",
+      "price": "20",
+      "image": "/assets/products/champu.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Pilexil Champú Anticaída 900ml",
+      "description": "Champú anticaída especialmente indicado para personas que desean frenar la pérdida de cabello al mismo tiempo que lo reparan, nutren y fortalecen. ",
+      "price": "20",
+      "image": "/assets/products/champu.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Pilexil Champú Anticaída 900ml",
+      "description": "Champú anticaída especialmente indicado para personas que desean frenar la pérdida de cabello al mismo tiempo que lo reparan, nutren y fortalecen. ",
+      "price": "20",
+      "image": "/assets/products/champu.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Pilexil Champú Anticaída 900ml",
+      "description": "Champú anticaída especialmente indicado para personas que desean frenar la pérdida de cabello al mismo tiempo que lo reparan, nutren y fortalecen. ",
+      "price": "20",
+      "image": "/assets/products/champu.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Pilexil Champú Anticaída 900ml",
+      "description": "Champú anticaída especialmente indicado para personas que desean frenar la pérdida de cabello al mismo tiempo que lo reparan, nutren y fortalecen. ",
+      "price": "20",
+      "image": "/assets/products/champu.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Pilexil Champú Anticaída 900ml",
+      "description": "Champú anticaída especialmente indicado para personas que desean frenar la pérdida de cabello al mismo tiempo que lo reparan, nutren y fortalecen. ",
+      "price": "20",
+      "image": "/assets/products/champu.jpg"
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+.main {
+
+    width: 15%;
+    background-color: #ffffff64;
+    position: absolute;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 30px;
+    min-height: 780px;
+    border-radius: 0px 10px 10px 0px;
+    z-index: 2000;
+    
+    }
+    
+    .image{
+    
+    width: 40%;
+    border-radius: 50%;
+    align-items: center;
+    align-content: center;
+    margin-top: 15%;
+    
+    }
+    
+    a {
+        color: #555555;
+        text-decoration: none;
+        background-color: transparent;
+    }
+    
+    
+    h1{
+    
+    margin-top: 3%;
+    margin-bottom: 10%;
+    
+    }
+
+    
+    
+    a:hover {
+        background-color: rgb(0, 0, 0);
+      }
+    
+      a:link, a:visited {
+        background-color: #aaaaaa00;
+        color: rgb(0, 0, 0);
+        padding: 14px 0px;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+      
+      a:hover, a:active {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+      }
+    
+      a:active {
+        color: rgb(0, 247, 255);
+      }
+    
+    element.style {
+        display: block;
+        width: 100% !important;
+        height: 100% !important;
+    }
+    
+    .lastdashboard {
+    
+        position: relative;
+        width: 135%;
+        height: 375px;
+        margin-left: 66%;
+        background-color: #ffffff64;
+        margin-top: 30px;
+        border-radius: 10px;
+        vertical-align: middle;
+        overflow: auto;
+
+        }
+    
+    .btn-primary {
+        color: #fff;
+        background-color: #494949;
+        border-color: #000000;
+        margin: 1%;
+    }
+    
+    .btn-add {
+        color: #fff;
+        background-color: #494949;
+        border-color: #000000;
+        width: 100%;
+    }
+    
+        .nextappointment{
+
+            position: relative;
+            margin-left: 33%;
+            height: 375px;
+            background-color: #ffffff64;
+            border-radius: 10px;
+            margin-top: 30px;
+            margin-bottom: 2%;
+            vertical-align: middle;
+            width: 100%;
+            z-index: 2000;
+            overflow: auto;
+            
+            }
+    
+        
+            .calendar{
+
+                position: relative;
+                margin-left: 33%;
+                
+                background-color: #ffffff64;
+                border-radius: 10px;
+                margin-top: 30px;
+                margin-bottom: 2%;
+                vertical-align: middle;
+                width: 100%;
+                z-index: 2000;
+               
+                
+                }
+
+                .error { color: crimson; }
+                .success { color: green; }
+          
+          
+                .captcha {
+          
+                  float: left !important;
+                  margin: 1%;
+                  margin-left: 5%;
+                  margin-top: -1%;
+                }
+
+                .newappointment {
+    
+                  position: relative;
+                  width: 135%;
+                  margin-left: 66%;
+                  background-color: #ffffff64;
+                  margin-top: 30px;
+                  border-radius: 10px;
+                  vertical-align: middle;
+                  overflow: auto;
+          
+                  }
+
+  
+ .checkout{
+
+  float: right !important;
+  margin: 1%;
+  margin-right: 10%;
+
+ }

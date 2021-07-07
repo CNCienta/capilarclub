@@ -1,0 +1,101 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "description": "Steam pod",
+      "price": "20",
+      "image": "/assets/admin/services-beautician.png"
+    },
+    {
+      "id": 2,
+      "description": "Child cut +10 years",
+      "price": "20",
+      "image": "/assets/admin/services-beautician.png"
+    },
+    {
+      "id": 3,
+      "description": "Color kit / cut / brushing / permanentecourt",
+      "price": "20",
+      "image": "/assets/admin/services-beautician.png"
+    },
+    {
+      "id": 4,
+      "description": "Short hair -Semi-permanent too-",
+      "price": "20",
+      "image": "/assets/admin/services-beautician.png"
+    },
+    {
+      "id": 5,
+      "description": "Contour home",
+      "price": "20",
+      "image": "/assets/admin/services-beautician.png"
+    },
+    {
+      "id": 6,
+      "description": "Color and regrowth / without product",
+      "price": "20",
+      "image": "/assets/admin/services-beautician.png"
+    },
+    {
+      "id": 7,
+      "description": "Medium length hair",
+      "price": "20",
+      "image": "/assets/admin/services-beautician.png"
+    },
+    {
+      "id": 8,
+      "description": "Long hair",
+      "price": "20",
+      "image": "/assets/admin/services-beautician.png"
+    },
+    {
+      "id": 9,
+      "description": "Extra long hair",
+      "price": "20",
+      "image": "/assets/admin/services-beautician.png"
+    },
+    {
+      "id": 10,
+      "description": "Man coloring",
+      "price": "20",
+      "image": "/assets/admin/services-beautician.png"
+    },
+    {
+      "id": 11,
+      "description": "Brushing mid-length hair",
+      "price": "20",
+      "image": "/assets/admin/services-beautician.png"
+    },
+    {
+      "id": 12,
+      "description": "Brushing long hair",
+      "price": "20",
+      "image": "/assets/admin/services-beautician.png"
+    },
+    {
+      "id": 13,
+      "description": "Brushing extra long hair",
+      "price": "20",
+      "image": "/assets/admin/services-beautician.png"
+    },
+    {
+      "id": 14,
+      "description": "Brushing extra-long frizzy hair",
+      "price": "20",
+      "image": "/assets/admin/services-beautician.png"
+    },
+    {
+      "id": 15,
+      "description": "Brushing long frizzy hair",
+      "price": "20",
+      "image": "/assets/admin/services-beautician.png"
+    },
+    {
+      "id": 16,
+      "description": "Brushing frizzy hair mid-length",
+      "price": "20",
+      "image": "/assets/admin/services-beautician.png"
+    }
+
+  ]
+}

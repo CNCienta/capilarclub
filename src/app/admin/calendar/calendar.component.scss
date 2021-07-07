@@ -1,0 +1,51 @@
+h3 {
+    margin: 0 0 10px;
+  }
+  
+  pre {
+    background-color: #ffffff64 !important;
+    padding: 15px;
+    z-index: 2000;
+
+  }
+
+  .calendar{
+
+    margin-left: 17%;
+    width: 80%;
+    background-color: #ffffff64 !important;
+    margin-top: 30px;
+    z-index: 2000;
+    margin-bottom: 30px;
+
+  }
+  .cal-month-view {
+    background-color: #ffffff64 !important;
+    margin-top: 5%;
+}
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #494949;
+  border-color: #000000;
+
+}
+
+.btn-add {
+  color: #fff;
+  background-color: #494949;
+  border-color: #000000;
+  width: 100%;
+}
+
+.btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}

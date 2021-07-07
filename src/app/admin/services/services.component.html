@@ -1,0 +1,108 @@
+
+<!doctype html>
+<html lang="en">
+  
+  <meta name="Header" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Author: Guillermo Galindo,
+      Illustrator: Guillermo Galindo">
+
+<body>
+
+    <div class="row">
+
+    <div class="col-8">
+
+    <div class="services">
+
+<table class="table table-striped">
+    
+    <thead>
+        <tr>
+            <th style="width: 10%;">Pic</th>
+            <th style="width: 10%;">Id</th>
+            <th style="width: 60%;">Description</th>
+            <th style="width: 10%;">Price</th>
+            <th style="width: 10%;"><a href="/add-service" class="btn btn-sm btn-add mr-1">Add</a></th>
+        </tr>
+        
+    </thead>
+    <tbody>
+        <tr *ngFor="let service of services">
+            <td><img class="image" src={{service.image}}></td>
+            <td>{{service.id}}</td>
+            <td>{{service.description}}</td>
+            <td>{{service.price}}</td>
+
+            <td style="white-space: nowrap">
+                <a routerLink="updateService/{{service.name}}" class="btn btn-sm btn-primary mr-1">Edit</a>
+                <button (click)="deleteService(service.name)" class="btn btn-sm btn-danger btn-delete-user" [disabled]="service.isDeleting">
+                    <span *ngIf="service.isDeleting" class="spinner-border spinner-border-sm"></span>
+                    <span *ngIf="!service.isDeleting">Delete</span>
+                </button>
+            </td>
+        </tr>
+        <tr *ngIf="!services">
+            <td colspan="4" class="text-center">
+                <span class="spinner-border spinner-border-lg align-center"></span>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+<div class="col-2">
+<div class="lastservices">
+    <h1>Last Added Services</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th style="width: 4%;">Pic</th>
+                <th style="width: 3%;">Id</th>
+                <th style="width: 6%;">Description</th>
+                <th style="width: 6%;">Price</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr *ngFor="let service of services.slice().reverse() ">
+                <td><img class="image" src={{service.image}}></td>
+                <td>{{service.id}}</td>
+                <td>{{service.description}}</td>
+                <td>{{service.price}}</td>
+
+            </tr>
+            <tr *ngIf="!services">
+                <td colspan="4" class="text-center">
+                    <span class="spinner-border spinner-border-lg align-center"></span>
+                </td>
+            </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class="lastservices">
+    <h1>Last Actions</h1>
+    <table class="table table-striped">
+
+        <tbody>
+            <tr *ngFor="let action of actions.slice().reverse() ">
+                <td>{{action.username}}</td>
+                <td>{{action.action}}</td>
+
+            </tr>
+            <tr *ngIf="!actions">
+                <td colspan="4" class="text-center">
+                    <span class="spinner-border spinner-border-lg align-center"></span>
+                </td>
+            </tr>
+        </tbody>
+      </table>
+</div>
+
+</div>
+
+</div>
+</body>
+</html>
+

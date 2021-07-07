@@ -1,0 +1,96 @@
+.register-card{
+
+    word-wrap: break-word;
+    background-color: rgba(255, 255, 255, 0.466);
+    background-clip: border-box;
+    border: 0.1px solid rgb(0, 0, 0);
+    width: 60%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    position: relative;
+   }
+  
+   .btn-primary {
+    color: #fff;
+    background-color: #000000;
+    border-color: #484848;
+  }
+  
+  .background {
+  
+    position: absolute;
+    margin-top: -0.3%;
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100%;
+    height: 110%;
+    
+    }
+
+    a {
+        color: #555555;
+        text-decoration: none;
+        background-color: transparent;
+        margin-left: 3%;
+    }
+
+    a:hover {
+        background-color: rgb(0, 0, 0);
+      }
+    
+      a:link, a:visited {
+        background-color: #aaaaaa00;
+        color: rgb(0, 0, 0);
+        padding: 7px 14px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+      
+      a:hover, a:active {
+        background-color: rgb(255, 0, 0);
+        color: rgb(255, 255, 255);
+      }
+    
+      a:active {
+
+        color: rgb(0, 247, 255);
+
+      }
+    
+
+      .error { color: crimson; }
+      .success { color: green; }
+
+
+      .captcha {
+
+        float: right !important;
+        margin-top: -6%;
+      }
+
+      .file {
+
+        float: left;
+        margin-left: 18%;
+        margin-top: -6%;
+        margin-bottom: 3%;
+      }
+
+      .avatar{
+
+        width: 100px;
+
+      }
+
+      button, input {
+        overflow: none;
+        visibility: none;
+    }

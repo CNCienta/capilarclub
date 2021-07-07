@@ -1,0 +1,283 @@
+
+<!doctype html>
+<html lang="en">
+  
+  <meta name="Header" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Author: Guillermo Galindo,
+      Illustrator: Guillermo Galindo">
+
+<body>
+
+    <div class="row">
+
+    <div class="col-7">
+
+    <div class="dashboard">
+        <div class="chart-wrapper">
+            <canvas baseChart 
+                [datasets]="lineChartData" 
+                [labels]="lineChartLabels" 
+                [options]="lineChartOptions"
+                [colors]="lineChartColors" 
+                [legend]="lineChartLegend" 
+                [chartType]="lineChartType" 
+                [plugins]="lineChartPlugins">
+            </canvas>
+        </div>
+
+</div>
+
+<div class="nextappointment">
+    <h1>Next Appontiments</h1>
+    <table class="table table-striped">
+    
+        <thead>
+            <tr>
+                
+                <th style="width: 3%;">Id</th>
+                <th style="width: 10%;">Date</th>
+                <th style="width: 6%;">Hour</th>
+                <th style="width: 10%;">Customer</th>
+                <th style="width: 5%;">Payed</th>
+                <th style="width: 20%;">Service</th>
+                <th style="width: 10%;">Worker</th>
+                <th style="width: 10%;"><a href="/add-apointment" class="btn btn-sm btn-add mr-1">Add</a></th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr *ngFor="let appointment of appointments">
+                <td>{{appointment.id}}</td>
+                <td>{{appointment.date}}</td>
+                <td>{{appointment.hour}}</td>
+                <td>{{appointment.customer}}</td>
+                <td>{{appointment.payed}}</td>
+                <td>{{appointment.service}}</td>
+                <td>{{appointment.worker}}</td>
+    
+                <td style="white-space: nowrap">
+                    <a routerLink="updateAppointment/{{appointment.name}}" class="btn btn-sm btn-primary mr-1">Edit</a>
+                    <button (click)="deleteAppointment(appointment.name)" class="btn btn-sm btn-danger btn-delete-user" [disabled]="appointment.isDeleting">
+                        <span *ngIf="appointment.isDeleting" class="spinner-border spinner-border-sm"></span>
+                        <span *ngIf="!appointment.isDeleting">Delete</span>
+                    </button>
+                </td>
+            </tr>
+            <tr *ngIf="!appointments">
+                <td colspan="4" class="text-center">
+                    <span class="spinner-border spinner-border-lg align-center"></span>
+                </td>
+            </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class="nextappointment">
+    <h1>Last Received Messages</h1>
+    <table class="table table-striped">
+    
+        <thead>
+            <tr>
+                <th style="width: 10%;">Pic</th>
+                <th style="width: 10%;">Id</th>
+                <th style="width: 60%;">Description</th>
+                <th style="width: 10%;">Price</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr *ngFor="let order of orders">
+                <td><img class="image" src={{order.image}}></td>
+                <td>{{order.id}}</td>
+                <td>{{order.description}}</td>
+                <td>{{order.price}}</td>
+    
+            </tr>
+            <tr *ngIf="!orders">
+                <td colspan="4" class="text-center">
+                    <span class="spinner-border spinner-border-lg align-center"></span>
+                </td>
+            </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class="nextappointment">
+    <h1>Last Processed Orders</h1>
+    <table class="table table-striped">
+    
+        <thead>
+            <tr>
+                <th style="width: 10%;">Pic</th>
+                <th style="width: 10%;">Id</th>
+                <th style="width: 60%;">Description</th>
+                <th style="width: 10%;">Price</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr *ngFor="let order of orders">
+                <td><img class="image" src={{order.image}}></td>
+                <td>{{order.id}}</td>
+                <td>{{order.description}}</td>
+                <td>{{order.price}}</td>
+    
+            </tr>
+            <tr *ngIf="!orders">
+                <td colspan="4" class="text-center">
+                    <span class="spinner-border spinner-border-lg align-center"></span>
+                </td>
+            </tr>
+        </tbody>
+      </table>
+
+
+</div>
+
+<div class="nextappointment">
+    <h1>Last Received Payments</h1>
+    <table class="table table-striped">
+    
+        <thead>
+            <tr>
+                <th style="width: 10%;">Pic</th>
+                <th style="width: 10%;">Id</th>
+                <th style="width: 60%;">Description</th>
+                <th style="width: 10%;">Price</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr *ngFor="let order of orders">
+                <td><img class="image" src={{order.image}}></td>
+                <td>{{order.id}}</td>
+                <td>{{order.description}}</td>
+                <td>{{order.price}}</td>
+    
+            </tr>
+            <tr *ngIf="!orders">
+                <td colspan="4" class="text-center">
+                    <span class="spinner-border spinner-border-lg align-center"></span>
+                </td>
+            </tr>
+        </tbody>
+      </table>
+
+
+</div>
+
+</div>
+
+<div class="col-3">
+    
+    <div class="lastdashboard">
+        <h1>Last Purchased Orders</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th style="width: 10%;">Pic</th>
+                    <th style="width: 10%;">Id</th>
+                    <th style="width: 20%;">Description</th>
+                    <th style="width: 20%;">Total Price</th>
+                </tr>
+                
+            </thead>
+            <tbody>
+                <tr *ngFor="let order of orders.slice().reverse() ">
+                    <td><img class="image" src={{order.image}}></td>
+                    <td>{{order.id}}</td>
+                    <td>{{order.description}}</td>
+                    <td>{{order.price}}$</td>
+    
+                </tr>
+                <tr *ngIf="!orders">
+                    <td colspan="4" class="text-center">
+                        <span class="spinner-border spinner-border-lg align-center"></span>
+                    </td>
+                </tr>
+            </tbody>
+          </table>
+    </div>
+
+    <div class="lastdashboard">
+        <h1>Last Actions</h1>
+        <table class="table table-striped">
+    
+            <tbody>
+                <tr *ngFor="let action of actions.slice().reverse() ">
+                    <td>{{action.username}}</td>
+                    <td>{{action.action}}</td>
+    
+                </tr>
+                <tr *ngIf="!actions">
+                    <td colspan="4" class="text-center">
+                        <span class="spinner-border spinner-border-lg align-center"></span>
+                    </td>
+                </tr>
+            </tbody>
+          </table>
+    </div>
+
+<div class="lastdashboard">
+    <h1>Last Added Customers</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th style="width: 4%;">Pic</th>
+                <th style="width: 6%;">1ºName</th>
+                <th style="width: 5%;">Country</th>
+                <th style="width: 5%;">ID</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr *ngFor="let customer of customers.slice().reverse() ">
+                <td><img class="image" src={{customer.image}}></td>
+                <td>{{customer.firstName}}</td>
+                <td>{{customer.country}}</td>
+                <td>{{customer.id}}</td>
+
+            </tr>
+            <tr *ngIf="!customers">
+                <td colspan="4" class="text-center">
+                    <span class="spinner-border spinner-border-lg align-center"></span>
+                </td>
+            </tr>
+        </tbody>
+      </table>
+</div>
+
+    <div class="lastdashboard">
+        <h1>Last Added Products</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th style="width: 10%;">Pic</th>
+                    <th style="width: 10%;">Id</th>
+                    <th style="width: 60%;">Name</th>
+                    <th style="width: 10%;">Price</th>
+                </tr>
+                
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products.slice().reverse() ">
+                    <td><img class="image" src={{product.image}}></td>
+                    <td>{{product.id}}</td>
+                    <td>{{product.name}}</td>
+                    <td>{{product.price}}$</td>
+    
+                </tr>
+                <tr *ngIf="!products">
+                    <td colspan="4" class="text-center">
+                        <span class="spinner-border spinner-border-lg align-center"></span>
+                    </td>
+                </tr>
+            </tbody>
+          </table>
+    </div>
+
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="e39d1bcfce9dc54d2b81298739efa59260ca0c40" datatype="html">
+        <source>Institute</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <note priority="1" from="description">Menu category</note>
+      </trans-unit>
+      <trans-unit id="f964ba1d87a98135310b4edce7649ee30ee0c201" datatype="html">
+        <source>Labs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <note priority="1" from="description">Menu category</note>
+      </trans-unit>
+      <trans-unit id="e85a30628b502c939d1ad9f651309a0356f40af8" datatype="html">
+        <source>Partners</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <note priority="1" from="description">Menu category</note>
+      </trans-unit>
+      <trans-unit id="31ea305d76cefc1b6e1c9e83264d0515a941ef35" datatype="html">
+        <source>Programs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <note priority="1" from="description">Menu category</note>
+      </trans-unit>
+      <trans-unit id="0dd435609f1a154ca489885d124dca7d3f4f79b1" datatype="html">
+        <source>Privaticy Policy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">Privaticy policy</note>
+      </trans-unit>
+      <trans-unit id="2cc7b8d55aa98c452029f9b05d451d1c79347f7b" datatype="html">
+        <source>Registration Agreement</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <note priority="1" from="description">Registration agreement</note>
+      </trans-unit>
+      <trans-unit id="c5e71f5c4a372587e97a2044da53f84971fb048d" datatype="html">
+        <source>QUICK LINKS<x id="START_TAG_SPAN" equiv-text="&lt;span&gt;&lt;/span&gt;"/><x id="CLOSE_TAG_SPAN" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description">Quick links</note>
+      </trans-unit>
+      <trans-unit id="262d902fa6713da6d7709ef83f403d90380fa029" datatype="html">
+        <source><x id="START_LINK" equiv-text="&lt;a href=&quot;./home&quot;&gt;"/>Home<x id="CLOSE_LINK" equiv-text="&lt;/a&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <note priority="1" from="description">Menu category</note>
+      </trans-unit>
+      <trans-unit id="d811878571fc071b9c82b1eff6506c7f53e1469d" datatype="html">
+        <source><x id="START_LINK" equiv-text="&lt;a href=&quot;./institute&quot;&gt;"/>Institute<x id="CLOSE_LINK" equiv-text="&lt;/a&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <note priority="1" from="description">Menu category</note>
+      </trans-unit>
+      <trans-unit id="9b06e2bd05c7102810db112e1778ebc01dd14e33" datatype="html">
+        <source><x id="START_LINK" equiv-text="&lt;a href=&quot;./labs&quot;&gt;"/>Labs<x id="CLOSE_LINK" equiv-text="&lt;/a&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <note priority="1" from="description">Menu category</note>
+      </trans-unit>
+      <trans-unit id="b7a35ae5c67d3515c742b1b35e14cbe94043509e" datatype="html">
+        <source><x id="START_LINK" equiv-text="&lt;a href=&quot;./partners&quot;&gt;"/>Partners<x id="CLOSE_LINK" equiv-text="&lt;/a&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="description">Menu category</note>
+      </trans-unit>
+      <trans-unit id="7b0df0a1a4ef6be9ee9c94c75ebe9b3864d5cc56" datatype="html">
+        <source><x id="START_LINK" equiv-text="&lt;a href=&quot;./programs&quot;&gt;"/>Programs<x id="CLOSE_LINK" equiv-text="&lt;/a&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <note priority="1" from="description">Menu category</note>
+      </trans-unit>
+      <trans-unit id="487fc5eed6e9ce7c38c6ae56d0352d5219861dd8" datatype="html">
+        <source>GET STARTED<x id="START_TAG_SPAN" equiv-text="&lt;span&gt;&lt;/span&gt;"/><x id="CLOSE_TAG_SPAN" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+        <note priority="1" from="description">Get started</note>
+      </trans-unit>
+      <trans-unit id="3caad558462f6d83e25bb99b38c6aabc1b8ebac5" datatype="html">
+        <source>Get access to your full work enviroment</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <note priority="1" from="description">Get access to your enviroment</note>
+      </trans-unit>
+      <trans-unit id="f851a1dcf6a4199fcf6b76c292c8e09d4fdf2704" datatype="html">
+        <source>Register Now</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <note priority="1" from="description">Register now</note>
+      </trans-unit>
+      <trans-unit id="43b465937b9bff3a4f7a2665aad0d057dc15789c" datatype="html">
+        <source>CONTACT US<x id="START_TAG_SPAN" equiv-text="&lt;span&gt;&lt;/span&gt;"/><x id="CLOSE_TAG_SPAN" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+        <note priority="1" from="description">Contact</note>
+      </trans-unit>
+      <trans-unit id="4eb839f758fe12bc304ccd78436baad86b4c7475" datatype="html">
+        <source>Copyright CNCienta.com © 2020. All rights reserved.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+        <note priority="1" from="description">Copyright creator</note>
+      </trans-unit>
+      <trans-unit id="b65fa38277479b6bfb46eac32a2da8c50b84790b" datatype="html">
+        <source>Partners Benefits</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-benefits/home-benefits.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8943b04e483c93842bb33a784484f13bc1662a9f" datatype="html">
+        <source> * Possibility to subscribe on our more than 500 programs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-benefits/home-benefits.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2638156c2b27b11adc1390ddd15a6399bd687c0e" datatype="html">
+        <source> * Offers at our more than 150 collaborators </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-benefits/home-benefits.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4e70b7c75869b44f6052da9162bb5de68b7e7040" datatype="html">
+        <source> * Bounty programs and workers competitions </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-benefits/home-benefits.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6b18e8e75a827fec86bd9fa223360e18109118c2" datatype="html">
+        <source> * Products devolutions withot cost for our VIP members </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-benefits/home-benefits.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="59a1e9f5362f84eded81ea40e3300f690a3aa0f8" datatype="html">
+        <source> * Services availability around the world </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-benefits/home-benefits.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e218eb372ac208901e352f665299d7144940a02d" datatype="html">
+        <source> * Best products to unbeatable </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-benefits/home-benefits.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3778e4f853ef8eb697a38c1c8e0da55810a49b52" datatype="html">
+        <source> * Earn CapilarCoins for whatever service</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-benefits/home-benefits.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  
+  <meta name="Header" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Author: Guillermo Galindo,
+      Illustrator: Guillermo Galindo">
+
+<body>
+
+    <div class="partners">
+
+<table class="table">
+    
+    <tbody>
+        <tr *ngFor="let partner of partners">
+            <td><img class="image" src={{partner.image}}></td>
+            <div class="row">
+            <td>{{partner.name}}</td>
+            <td>{{partner.web}}</td>
+            <td>{{partner.description}}</td>
+          </div>
+        </tr>
+        <tr *ngIf="!partners">
+            <td colspan="4" class="text-center">
+                <span class="spinner-border spinner-border-lg align-center"></span>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
+</body>
+</html>

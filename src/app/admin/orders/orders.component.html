@@ -1,0 +1,101 @@
+
+<!doctype html>
+<html lang="en">
+  
+  <meta name="Header" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Author: Guillermo Galindo,
+      Illustrator: Guillermo Galindo">
+
+<body>
+
+    <div class="row">
+
+    <div class="col-8">
+
+    <div class="orders">
+
+<table class="table table-striped">
+    
+    <thead>
+        <tr>
+            <th style="width: 10%;">Pic</th>
+            <th style="width: 10%;">Id</th>
+            <th style="width: 60%;">Description</th>
+            <th style="width: 10%;">Price</th>
+        </tr>
+        
+    </thead>
+    <tbody>
+        <tr *ngFor="let order of orders">
+            <td><img class="image" src={{order.image}}></td>
+            <td>{{order.id}}</td>
+            <td>{{order.description}}</td>
+            <td>{{order.price}}</td>
+
+        </tr>
+        <tr *ngIf="!orders">
+            <td colspan="4" class="text-center">
+                <span class="spinner-border spinner-border-lg align-center"></span>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+<div class="col-2">
+<div class="lastorders">
+    <h1>Last Purchased Orders</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th style="width: 4%;">Pic</th>
+                <th style="width: 3%;">Id</th>
+                <th style="width: 6%;">Description</th>
+                <th style="width: 6%;">Price</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr *ngFor="let order of orders.slice().reverse() ">
+                <td><img class="image" src={{order.image}}></td>
+                <td>{{order.id}}</td>
+                <td>{{order.description}}</td>
+                <td>{{order.price}}</td>
+
+            </tr>
+            <tr *ngIf="!orders">
+                <td colspan="4" class="text-center">
+                    <span class="spinner-border spinner-border-lg align-center"></span>
+                </td>
+            </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class="lastorders">
+    <h1>Last Actions</h1>
+    <table class="table table-striped">
+
+        <tbody>
+            <tr *ngFor="let action of actions.slice().reverse() ">
+                <td>{{action.username}}</td>
+                <td>{{action.action}}</td>
+
+            </tr>
+            <tr *ngIf="!actions">
+                <td colspan="4" class="text-center">
+                    <span class="spinner-border spinner-border-lg align-center"></span>
+                </td>
+            </tr>
+        </tbody>
+      </table>
+</div>
+
+</div>
+
+</div>
+</body>
+</html>
+
+
